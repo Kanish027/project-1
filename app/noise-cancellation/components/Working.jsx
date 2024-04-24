@@ -5,6 +5,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import Image from "next/image";
 
 function Icon({ id, open }) {
   return (
@@ -52,14 +53,14 @@ const Working = () => {
                     Download and install
                   </AccordionHeader>
                   <AccordionBody className="learn_more_text">
-                    Krisp is a desktop app for Mac and Windows. When you install
+                    {/* Krisp is a desktop app for Mac and Windows. When you install
                     Krisp on your computer, it creates virtual devices named
                     Krisp Microphone and Krisp Speaker. It mimics a physical
                     hardware device, when, in fact, it exists only in software
-                    form.
+                    form. */}
                   </AccordionBody>
                   <AccordionBody className="md:hidden">
-                    <img src="/img_benefit_echo.png" alt="" />
+                    <Image src="/img_benefit_echo.png" alt="" />
                   </AccordionBody>
                 </Accordion>
                 <hr className="border-1 border-slate-300" />
@@ -71,13 +72,13 @@ const Working = () => {
                     Configure
                   </AccordionHeader>
                   <AccordionBody className="learn_more_text">
-                    Krisp offers a seamless setup experience without the need
+                    {/* Krisp offers a seamless setup experience without the need
                     for extra integrations, add-ons, or bots. Simply select
                     Krisp Microphone and Krisp Speaker in your conferencing app
-                    settings, and we'll handle the rest.
+                    settings, and we'll handle the rest. */}
                   </AccordionBody>
                   <AccordionBody className="md:hidden">
-                    <img src="/img_benefit_nc.png" alt="" />
+                    <Image src="/img_benefit_nc.png" alt="" />
                   </AccordionBody>
                 </Accordion>
                 <hr className="border-1 border-slate-300" />
@@ -89,13 +90,13 @@ const Working = () => {
                     Unleash productivity
                   </AccordionHeader>
                   <AccordionBody className="learn_more_text ">
-                    Once Krisp is integrated with your desktop or web-based app,
+                    {/* Once Krisp is integrated with your desktop or web-based app,
                     you're unstoppable! Experience unparalleled audio clarity,
                     complemented by auto-transcriptions, and AI generated
-                    meeting summaries and action items for all your meetings.
+                    meeting summaries and action items for all your meetings. */}
                   </AccordionBody>
                   <AccordionBody className="md:hidden">
-                    <img src="/img_benefit_bg_voice.png" alt="" />
+                    <Image src="/img_benefit_bg_voice.png" alt="" />
                   </AccordionBody>
                 </Accordion>
               </>
@@ -103,17 +104,17 @@ const Working = () => {
             <div className="hidden md:block">
               {(open === 1 && (
                 <>
-                  <img src="/img_benefit_echo.png" alt="" />
+                  <Image src="/img_benefit_echo.png" alt="" />
                 </>
               )) ||
                 (open === 2 && (
                   <>
-                    <img src="/img_benefit_nc.png" alt="" />
+                    <Image src="/img_benefit_nc.png" alt="" />
                   </>
                 )) ||
                 (open === 3 && (
                   <>
-                    <img src="/img_benefit_bg_voice.png" alt="" />
+                    <Image src="/img_benefit_bg_voice.png" alt="" />
                   </>
                 ))}
             </div>

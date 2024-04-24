@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 const BikePlayer = () => {
@@ -87,7 +88,7 @@ const BikePlayer = () => {
           <div className="w-full relative overflow-hidden">
             <div className="">
               <div className="progress">
-                <img
+                <Image
                   src="https://krisp.ai/wp-content/themes/krisp-v4/imgs/img_progress_sm.svg"
                   alt=""
                   width={506}
